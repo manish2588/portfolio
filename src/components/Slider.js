@@ -23,7 +23,7 @@ const ImageSliderWithText = ({
   };
 
   return (
-    <div className="flex flex-col lg:flex-row h-auto bg-transparent mx-auto w-[90vw] mt-16 mb-16">
+    <div className="flex flex-col lg:flex-row h-auto bg-transparent mx-auto w-[90vw] mt-16 mb-16 ">
       {/* Details Div */}
       <motion.div 
       initial={{opacity:0,x:-100}}
@@ -37,10 +37,10 @@ const ImageSliderWithText = ({
         <p className="text-2xl text-white font-sans font-normal">
           Technologies Used: {tech}
         </p>
-        <p className="text-xl text-white font-sans font-normal">{description1}</p>
-        <p className="text-xl text-white font-sans font-normal">{description2}</p>
-        <p className="text-xl text-white font-sans font-normal">{description3}</p>
-        <p className="text-xl text-white font-sans font-normal">{description4}</p>
+        <p className="text-xl text-white font-sans font-normal text-justify">{description1}</p>
+        <p className="text-xl text-white font-sans font-normal text-justify">{description2}</p>
+        <p className="text-xl text-white font-sans font-normal text-justify">{description3}</p>
+        <p className="text-xl text-white font-sans font-normal text-justify">{description4}</p>
       </motion.div>
 
       {/* Slider Div */}
