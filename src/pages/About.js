@@ -13,7 +13,7 @@ function Aboutme() {
       <motion.div
         initial={{ opacity: 0, x: -50 }} // Reduced X offset for smaller screens
         whileInView={{ opacity: [0, 0.5, 1], x: 0 }}
-        transition={{ duration: 1.5,type: "spring", stiffness: 100 }}
+        transition={{ duration: 2,type: "spring", stiffness: 100 }}
         className="flex flex-col space-y-6 sm:space-y-8 w-full sm:w-1/2 px-4 sm:px-8 md:px-12"
       >
         <span className="border text-white border-indigo-600 rounded-full inline-block px-4 py-2 w-auto sm:w-48 md:w-60 font-sans font-light">
@@ -53,7 +53,7 @@ function Aboutme() {
         <motion.div
           initial={{ opacity: 0, x: 50 }} // Reduced X offset for smaller screens
           whileInView={{ opacity: [0, 0.5, 1], x: 0 }}
-          transition={{ duration: 1.5,type: "spring", stiffness: 100 }}
+          transition={{ duration: 2,type: "spring", stiffness: 100 }}
           whileHover={{
             scale: 1.2,
             textShadow: "0px 0px 16px rgb(255,255,255)",

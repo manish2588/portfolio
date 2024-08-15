@@ -31,7 +31,7 @@ const ImageSliderWithText = ({
         opacity:[0.25,0.5,1],
         x:0
       }}
-      transition={{duration:1.5,type: "spring", stiffness: 100}}
+      transition={{duration:2,type: "spring", stiffness: 100}}
       className="w-full lg:w-1/3  flex flex-col p-4 space-y-2 lg:space-y-4 mb-8 lg:mb-0 lg:mr-8">
         <h1 className="text-4xl font-semibold font-sans mb-4 text-white">{heading}</h1>
         <p className="text-2xl text-white font-sans font-normal">
@@ -50,7 +50,7 @@ const ImageSliderWithText = ({
          opacity:[0.25,0.5,1],
          x:0
        }}
-       transition={{duration:1.5,type: "spring", stiffness: 100}}
+       transition={{duration:2,type: "spring", stiffness: 100}}
       className="w-full lg:w-2/3 relative flex items-center justify-center p-4">
         <div className="relative w-full h-full flex items-center justify-center">
           <motion.img
