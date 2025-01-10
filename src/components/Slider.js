@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 const ImageSliderWithText = ({
   images,
@@ -24,34 +24,35 @@ const ImageSliderWithText = ({
 
   return (
     <div className="flex flex-col lg:flex-row h-auto bg-transparent mx-auto w-[90vw] mt-16 mb-16 ">
-      {/* Details Div */}
-      <motion.div 
-      initial={{opacity:0,x:-100}}
-      whileInView={{
-        opacity:[0.25,0.5,1],
-        x:0
-      }}
-      transition={{duration:2,type: "spring", stiffness: 100}}
-      className="w-full lg:w-1/3  flex flex-col p-4 space-y-2 lg:space-y-4 mb-8 lg:mb-0 lg:mr-8">
-        <h1 className="text-4xl font-semibold font-sans mb-4 text-white">{heading}</h1>
-        <p className="text-2xl text-white font-sans font-normal">
-          Technologies Used: {tech}
+      <motion.div
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{
+          opacity: [0.25, 0.5, 1],
+          x: 0,
+        }}
+        transition={{ duration: 2, type: "spring", stiffness: 100 }}
+        className="w-full lg:w-1/3  flex flex-col p-4 space-y-2 lg:space-y-4 mb-8 lg:mb-0 lg:mr-8"
+      >
+        <h1 className="text-4xl font-semibold font-sans mb-4 text-white text-center">
+          {heading}
+        </h1>
+        <p className="text-2xl text-white font-sans font-normal text-center">
+          Technologies Used
         </p>
-        <p className="text-xl text-white font-sans font-normal text-justify">{description1}</p>
-        <p className="text-xl text-white font-sans font-normal text-justify">{description2}</p>
-        <p className="text-xl text-white font-sans font-normal text-justify">{description3}</p>
-        <p className="text-xl text-white font-sans font-normal text-justify">{description4}</p>
+        <p className="text-2xl text-white font-sans font-normal text-center">
+         {tech}
+        </p>
       </motion.div>
 
-      {/* Slider Div */}
-      <motion.div 
-       initial={{opacity:0,x:100}}
-       whileInView={{
-         opacity:[0.25,0.5,1],
-         x:0
-       }}
-       transition={{duration:2,type: "spring", stiffness: 100}}
-      className="w-full lg:w-2/3 relative flex items-center justify-center p-4">
+      <motion.div
+        initial={{ opacity: 0, x: 100 }}
+        whileInView={{
+          opacity: [0.25, 0.5, 1],
+          x: 0,
+        }}
+        transition={{ duration: 2, type: "spring", stiffness: 100 }}
+        className="w-full lg:w-2/3 relative flex items-center justify-center p-4"
+      >
         <div className="relative w-full h-full flex items-center justify-center">
           <motion.img
             key={images[currentIndex]} // Use the current image as the key for animation
