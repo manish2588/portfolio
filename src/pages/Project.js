@@ -8,6 +8,7 @@ function Project() {
     "/photos/PA_3.png",
     "/photos/PA_4.png",
   ];
+  const images4 = ["/photos/PD_1.png", "/photos/PD_2.png", "/photos/PD_3.png"];
 
   const images3 = ["/photos/PC_1.png", "/photos/PC_2.png", "/photos/PC_3.png"];
 
@@ -17,7 +18,12 @@ function Project() {
     tech: "React.js Tailwind CSS",
     images: images3,
   };
+  const details4 = {
+    heading: "YOutube Clone",
 
+    tech: "React.js Tailwind CSS Youtube API",
+    images: images4,
+  };
   const details1 = {
     heading: "Business Website",
 
@@ -39,18 +45,22 @@ function Project() {
   };
 
   return (
-    <div className="mt-16">
+    <div className="mt-16 max-w-full">
       <h1 className="text-4xl font-sans text-center animated-text font-semibold flex flex-col space-y-12">
         MY PROJECTS
       </h1>
       <div className=" mb-10">
         <ImageSliderWithText {...details1} />
       </div>
+
       <div className="mt-16">
-        <ImageSliderWithText {...details2} />
+        <ImageSliderWithText {...details4} />
       </div>
       <div className="mt-16">
         <ImageSliderWithText {...details3} />
+      </div>
+      <div className="mt-16">
+        <ImageSliderWithText {...details2} />
       </div>
     </div>
   );

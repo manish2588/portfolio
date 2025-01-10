@@ -23,7 +23,8 @@ const ImageSliderWithText = ({
   };
 
   return (
-    <div className="flex flex-col lg:flex-row h-auto bg-transparent mx-auto w-[90vw] mt-16 mb-16 ">
+    <div className="flex flex-col lg:flex-row h-auto bg-transparent max-w-screen overflow-hidden mt-16 mb-16">
+      {/* Left Section with Text */}
       <motion.div
         initial={{ opacity: 0, x: -100 }}
         whileInView={{
@@ -31,7 +32,7 @@ const ImageSliderWithText = ({
           x: 0,
         }}
         transition={{ duration: 2, type: "spring", stiffness: 100 }}
-        className="w-full lg:w-1/3  flex flex-col p-4 space-y-2 lg:space-y-4 mb-8 lg:mb-0 lg:mr-8"
+        className="w-full lg:w-1/3 flex flex-col p-4 space-y-2 lg:space-y-4 mb-8 lg:mb-0 lg:mr-8"
       >
         <h1 className="text-4xl font-semibold font-sans mb-4 text-white text-center">
           {heading}
@@ -40,10 +41,11 @@ const ImageSliderWithText = ({
           Technologies Used
         </p>
         <p className="text-2xl text-white font-sans font-normal text-center">
-         {tech}
+          {tech}
         </p>
       </motion.div>
 
+      {/* Right Section with Slider */}
       <motion.div
         initial={{ opacity: 0, x: 100 }}
         whileInView={{
@@ -55,14 +57,14 @@ const ImageSliderWithText = ({
       >
         <div className="relative w-full h-full flex items-center justify-center">
           <motion.img
-            key={images[currentIndex]} // Use the current image as the key for animation
+            key={images[currentIndex]}
             src={images[currentIndex]}
             alt={`Slide ${currentIndex}`}
-            className="object-cover w-full max-w-[650px] h-[300px] sm:h-[400px] rounded-lg"
-            initial={{ opacity: 0 }} // Start with opacity 0
-            animate={{ opacity: 1 }} // Animate to opacity 1
-            exit={{ opacity: 0 }} // Exit with opacity 0
-            transition={{ duration: 2 }} // Transition duration for fade effect
+            className="object-cover w-full max-w-[700px] h-[300px] sm:h-[400px] rounded-lg"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 2 }}
           />
 
           {/* Previous Button */}
