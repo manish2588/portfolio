@@ -1,15 +1,10 @@
-"use client";
-
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 const ImageSliderWithText = ({
   images,
   heading,
-  description1,
-  description2,
-  description3,
-  description4,
+
   tech,
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -40,7 +35,7 @@ const ImageSliderWithText = ({
         <p className="text-2xl text-white font-sans font-normal text-center">
           Technologies Used
         </p>
-        <p className="text-2xl text-white font-sans font-normal text-center">
+        <p className="text-2xl text-white font-sans font-normal text-center border-2 border-white p-4">
           {tech}
         </p>
       </motion.div>

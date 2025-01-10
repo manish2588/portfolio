@@ -8,40 +8,40 @@ function Project() {
     "/photos/PA_3.png",
     "/photos/PA_4.png",
   ];
-  const images4 = ["/photos/PD_1.png", "/photos/PD_2.png", "/photos/PD_3.png"];
-
-  const images3 = ["/photos/PC_1.png", "/photos/PC_2.png", "/photos/PC_3.png"];
-
-  const details3 = {
-    heading: "Restaurant Website",
-
-    tech: "React.js Tailwind CSS",
-    images: images3,
-  };
-  const details4 = {
-    heading: "YOutube Clone",
-
-    tech: "React.js Tailwind CSS Youtube API",
-    images: images4,
-  };
-  const details1 = {
-    heading: "Business Website",
-
-    tech: "Next.js Tailwind CSS",
-    images: images1,
-  };
-
   const images2 = [
     "/photos/PB_1.png",
     "/photos/PB_2.png",
     "/photos/PB_3.png",
     "/photos/PB_4.png",
   ];
+  const images4 = ["/photos/PD_1.png", "/photos/PD_2.png", "/photos/PD_3.png"];
+
+  const images3 = ["/photos/PC_1.png", "/photos/PC_2.png", "/photos/PC_3.png"];
+
+  const details1 = {
+    heading: "Business Website",
+
+    tech: "Next.js, Tailwind CSS",
+    images: images1,
+  };
   const details2 = {
     heading: "Image Search",
-    tech: "HTML CSS JavaScript",
+    tech: "HTML, CSS,JavaScript",
 
     images: images2,
+  };
+
+  const details3 = {
+    heading: "Restaurant Website",
+
+    tech: "React.js, Tailwind CSS, Redux Toolkit",
+    images: images3,
+  };
+  const details4 = {
+    heading: "Youtube Clone",
+
+    tech: "React.js, Tailwind CSS, Youtube API",
+    images: images4,
   };
 
   return (

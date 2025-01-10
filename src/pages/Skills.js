@@ -1,13 +1,16 @@
 import React, { useState } from "react";
-import { FaHtml5, FaReact, FaJsSquare, FaGithub } from "react-icons/fa";
+import { FaHtml5, FaReact, FaJsSquare, FaGithub,FaCss3Alt } from "react-icons/fa";
 import { SiNextdotjs, SiTailwindcss } from "react-icons/si";
 import { DiNodejsSmall } from "react-icons/di";
+import { TbBrandRedux } from "react-icons/tb";
 import { motion } from "framer-motion";
 
 const items = [
   { name: "HTML", icon: <FaHtml5 className="text-orange-600" /> },
+  { name: "CSS", icon: <FaCss3Alt className="text-blue-600" /> },
   { name: "JavaScript", icon: <FaJsSquare className="text-yellow-300" /> },
   { name: "React.js", icon: <FaReact className="text-blue-400" /> },
+  { name: "Redux Toolkit", icon: <TbBrandRedux className="text-purple-600" /> },
   { name: "Next.js", icon: <SiNextdotjs className="text-white" /> },
   { name: "Tailwind CSS", icon: <SiTailwindcss className="text-blue-500" /> },
   { name: "Git and GitBash", icon: <FaGithub className="text-white" /> },
