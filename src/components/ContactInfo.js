@@ -1,15 +1,14 @@
-import React from 'react';
-import { FaArrowRight,FaFacebook } from 'react-icons/fa';
-import { motion } from 'framer-motion';
+import React from "react";
+import { FaArrowRight, FaFacebook } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const InfoBoxes = () => {
   return (
     <div className="flex flex-wrap justify-center gap-4 mt-6">
-      {/* Call Us Box */}
       <motion.a
-       initial={{ opacity: 0, y: -200 }}
-       whileInView={{ opacity: [0, 0.25, 0.5, 0.75, 1], y: 0 }}
-       transition={{ duration: 2, type: "spring", stiffness: 30 }}
+        initial={{ opacity: 0, y: -200 }}
+        whileInView={{ opacity: [0, 0.25, 0.5, 0.75, 1], y: 0 }}
+        transition={{ duration: 2, type: "spring", stiffness: 30 }}
         href="tel:9808952367"
         className="relative flex items-center w-full sm:w-64"
       >
@@ -28,11 +27,10 @@ const InfoBoxes = () => {
         </div>
       </motion.a>
 
-      {/* Visit Us Box */}
       <motion.a
-       initial={{ opacity: 0, y: -200 }}
-       whileInView={{ opacity: [0, 0.25, 0.5, 0.75, 1], y: 0 }}
-       transition={{ duration: 2,delay:0.2, type: "spring", stiffness: 30 }}
+        initial={{ opacity: 0, y: -200 }}
+        whileInView={{ opacity: [0, 0.25, 0.5, 0.75, 1], y: 0 }}
+        transition={{ duration: 2, delay: 0.2, type: "spring", stiffness: 30 }}
         href="https://www.facebook.com/manish.kc.94617999"
         target="_blank"
         rel="noopener noreferrer"
@@ -45,7 +43,10 @@ const InfoBoxes = () => {
             </div>
           </div>
           <div className="flex items-center text-gray-300 justify-center text-lg font-semibold transition-opacity duration-500 group-hover:opacity-0">
-            Connect with me <span className='pl-2'><FaFacebook className="text-2xl text-blue-500" /></span>
+            Connect with me{" "}
+            <span className="pl-2">
+              <FaFacebook className="text-2xl text-blue-500" />
+            </span>
           </div>
         </div>
         <div className="w-auto h-full flex items-center bg-blue-500 text-white p-2 rounded-r-lg">
@@ -53,11 +54,10 @@ const InfoBoxes = () => {
         </div>
       </motion.a>
 
-      {/* Email Box */}
       <motion.a
-       initial={{ opacity: 0, y: -200 }}
-       whileInView={{ opacity: [0, 0.25, 0.5, 0.75, 1], y: 0 }}
-       transition={{ duration: 2,delay:0.4, type: "spring", stiffness: 30 }}
+        initial={{ opacity: 0, y: -200 }}
+        whileInView={{ opacity: [0, 0.25, 0.5, 0.75, 1], y: 0 }}
+        transition={{ duration: 2, delay: 0.4, type: "spring", stiffness: 30 }}
         href="mailto:manishkc258@gmail.com"
         className="relative flex items-center w-full sm:w-64"
       >

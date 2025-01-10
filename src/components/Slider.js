@@ -19,7 +19,6 @@ const ImageSliderWithText = ({
 
   return (
     <div className="flex flex-col lg:flex-row h-auto bg-transparent max-w-screen overflow-hidden mt-16 mb-16">
-      {/* Left Section with Text */}
       <motion.div
         initial={{ opacity: 0, x: -100 }}
         whileInView={{
@@ -40,7 +39,6 @@ const ImageSliderWithText = ({
         </p>
       </motion.div>
 
-      {/* Right Section with Slider */}
       <motion.div
         initial={{ opacity: 0, x: 100 }}
         whileInView={{
@@ -62,7 +60,6 @@ const ImageSliderWithText = ({
             transition={{ duration: 2 }}
           />
 
-          {/* Previous Button */}
           <button
             onClick={prevSlide}
             className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-gray-700 text-white rounded-full p-2"
@@ -70,7 +67,6 @@ const ImageSliderWithText = ({
             &#9664;
           </button>
 
-          {/* Next Button */}
           <button
             onClick={nextSlide}
             className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-gray-700 text-white rounded-full p-2"

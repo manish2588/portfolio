@@ -1,4 +1,3 @@
-'use client';
 
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
@@ -32,7 +31,7 @@ const Navbar = () => {
       className="bg-transparent p-4 fixed top-0 left-0 right-0 z-50 backdrop-blur-lg backdrop-brightness-50"
     >
       <div className="container mx-auto flex items-center justify-between h-16 relative">
-        {/* CV Button */}
+        
         <motion.a
           variants={list_variants}
           initial="hidden"
@@ -58,14 +57,14 @@ const Navbar = () => {
             <FaGithub />
           </a>
         </div>
-        {/* Hamburger Menu for small screens */}
+       
         <div className="lg:hidden">
           <button onClick={toggleMenu} className="text-white text-2xl">
             {isMenuOpen ? <AiOutlineClose /> : <AiOutlineMenu />}
           </button>
         </div>
 
-        {/* Navigation Links */}
+     
         <div className={`lg:flex items-center space-x-8 my-auto p-2 ${isMenuOpen ? 'block' : 'hidden'} lg:block`}>
           <motion.ul 
             variants={list_variants}
@@ -156,7 +155,7 @@ const Navbar = () => {
           </motion.ul>
         </div>
 
-        {/* Social Icons for larger screens */}
+     
         <div className="hidden lg:flex space-x-4">
           <a href="https://www.facebook.com/manish.kc.94617999" target="_blank" rel="noopener noreferrer" className="text-white text-2xl hover:text-gray-400">
             <FaFacebook className="text-blue-500" />
@@ -167,7 +166,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Social Icons for small screens */}
+    
       {isMenuOpen && (
         <div className="lg:hidden flex flex-col items-center space-y-4 mt-4 bg-gray-800 p-4">
           <a href="https://www.facebook.com/manish.kc.94617999" target="_blank" rel="noopener noreferrer" className="text-white text-2xl hover:text-gray-400">

@@ -20,7 +20,7 @@ const items = [
 const listVariants = {
   visible: {
     transition: {
-      staggerChildren: 0.3, // Delay between animations of each child
+      staggerChildren: 0.3, 
     },
   },
   hidden: {
@@ -40,7 +40,7 @@ const HoverList = () => {
 
   return (
     <div className="flex flex-col lg:flex-row w-full lg:w-[80vw] mx-auto mt-12 lg:mt-24">
-      {/* Left section (Technologies List) */}
+      
       <div className="w-full lg:w-1/2 p-4 bg-transparent">
         <h1 className="text-center font-sans font-medium text-2xl lg:text-4xl text-white mb-6 underline underline-offset-4 decoration-blue-800">
           Technologies
@@ -64,7 +64,7 @@ const HoverList = () => {
         </motion.ul>
       </div>
 
-      {/* Right section (Icon Display) */}
+   
       <motion.div className="w-full lg:w-1/2 p-4 flex bg-transparent">
         <motion.div className="h-64 lg:h-80 w-64 lg:w-80 mx-auto my-12 lg:my-24 flex items-center justify-center">
           {hoveredItem ? (

@@ -9,9 +9,9 @@ function Aboutme() {
 
   return (
     <motion.div className="flex flex-col sm:flex-row px-4 sm:px-8 md:px-24 mt-8 sm:mt-12 md:mt-24 space-y-8 sm:space-y-0 sm:space-x-8 md:space-x-12 w-full h-auto">
-      {/* Text Section */}
+    
       <motion.div
-        initial={{ opacity: 0, x: -50 }} // Reduced X offset for smaller screens
+        initial={{ opacity: 0, x: -50 }} 
         whileInView={{ opacity: [0, 0.5, 1], x: 0 }}
         transition={{ duration: 2,type: "spring", stiffness: 100 }}
         className="flex flex-col space-y-6 sm:space-y-8 w-full sm:w-1/2 px-4 sm:px-8 md:px-12"
@@ -48,10 +48,10 @@ function Aboutme() {
         </div>
       </motion.div>
       
-      {/* Image Section */}
+   
       <div className="w-full sm:w-1/2 flex justify-center">
         <motion.div
-          initial={{ opacity: 0, x: 50 }} // Reduced X offset for smaller screens
+          initial={{ opacity: 0, x: 50 }} 
           whileInView={{ opacity: [0, 0.5, 1], x: 0 }}
           transition={{ duration: 2,type: "spring", stiffness: 100 }}
           whileHover={{
@@ -66,9 +66,9 @@ function Aboutme() {
             src="/photos/IMG20240309180123.jpg"
             alt="Profile"
             className="w-full h-full object-cover"
-            whileInView={{ opacity: 1 }} // Ensure image fades in when in view
+            whileInView={{ opacity: 1 }} 
             initial={{ opacity: 0 }}
-            transition={{ duration: 0.5 }} // Shorter transition for responsiveness
+            transition={{ duration: 0.5 }} 
           />
         </motion.div>
       </div>
