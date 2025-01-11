@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-
-const ImageSliderWithText = ({
-  images,
-  heading,
-
-  tech,
-}) => {
+import { FaReact } from "react-icons/fa";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { RiNextjsFill } from "react-icons/ri";
+import { TbBrandRedux } from "react-icons/tb";
+import { FaYoutube } from "react-icons/fa";
+const ImageSliderWithText = ({ images, heading, tech1, tech2, tech3 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const prevSlide = () => {
@@ -34,8 +33,16 @@ const ImageSliderWithText = ({
         <p className="text-2xl text-white font-sans font-normal text-center">
           Technologies Used
         </p>
-        <p className="text-2xl text-white font-sans font-normal text-center border-2 border-white p-4">
-          {tech}
+        <p>
+          <span className="text-2xl text-white font-sans font-normal text-center border-2 border-white p-4">
+            {tech1}
+          </span>
+          <span className="text-2xl text-white font-sans font-normal text-center border-2 border-white p-4">
+            {tech2}
+          </span>
+          <span className="text-2xl text-white font-sans font-normal text-center border-2 border-white p-4">
+            {tech3}
+          </span>
         </p>
       </motion.div>
 

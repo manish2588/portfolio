@@ -20,27 +20,28 @@ function Project() {
 
   const details1 = {
     heading: "Business Website",
-
-    tech: "Next.js, Tailwind CSS",
+    tech1: "Next.js",
+    tech2:"Tailwind CSS",
     images: images1,
   };
   const details2 = {
     heading: "Image Search",
     tech: "HTML, CSS,JavaScript",
-
     images: images2,
   };
 
   const details3 = {
     heading: "Restaurant Website",
-
-    tech: "React.js, Tailwind CSS, Redux Toolkit",
+    tech1: "React.js",
+    tech2:"Tailwind CSS",
+    tech3:"Redux Toolkit",
     images: images3,
   };
   const details4 = {
     heading: "Youtube Clone",
-
-    tech: "React.js, Tailwind CSS, Youtube API",
+    tech1: "React.js",
+    tech2:"Tailwind CSS",
+    tech3:"Redux Toolkit",
     images: images4,
   };
 
