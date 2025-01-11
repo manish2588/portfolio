@@ -33,16 +33,25 @@ const ImageSliderWithText = ({ images, heading, tech1, tech2, tech3 }) => {
         <p className="text-2xl text-white font-sans font-normal text-center">
           Technologies Used
         </p>
-        <p>
-          <span className="text-2xl text-white font-sans font-normal text-center border-2 border-white p-4">
-            {tech1}
+        <p className="flex flex-col space-y-2">
+          <span className=" text-white text-2xl border-2 border-white p-4 flex space-x-3 items-center justify-center">
+            <span>
+              <FaReact />
+            </span>
+            <span> {tech1}</span>
           </span>
-          <span className="text-2xl text-white font-sans font-normal text-center border-2 border-white p-4">
-            {tech2}
+          <span className=" text-white text-2xl border-2 border-white p-4 flex space-x-3 items-center justify-center">
+            <span>
+              <FaReact />
+            </span>
+            <span> {tech2}</span>
           </span>
-          <span className="text-2xl text-white font-sans font-normal text-center border-2 border-white p-4">
-            {tech3}
-          </span>
+         {tech3?( <span className=" text-white text-2xl border-2 border-white p-4 flex space-x-3 items-center justify-center">
+            <span>
+              <FaReact />
+            </span>
+            <span> {tech3}</span>
+          </span>):null}
         </p>
       </motion.div>
 
