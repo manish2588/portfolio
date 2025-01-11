@@ -1,11 +1,16 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { FaReact } from "react-icons/fa";
-import { RiTailwindCssFill } from "react-icons/ri";
-import { RiNextjsFill } from "react-icons/ri";
-import { TbBrandRedux } from "react-icons/tb";
-import { FaYoutube } from "react-icons/fa";
-const ImageSliderWithText = ({ images, heading, tech1, tech2, tech3 }) => {
+
+const ImageSliderWithText = ({
+  images,
+  heading,
+  tech1,
+  tech2,
+  tech3,
+  logo1,
+  logo2,
+  logo3,
+}) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const prevSlide = () => {
@@ -25,33 +30,27 @@ const ImageSliderWithText = ({ images, heading, tech1, tech2, tech3 }) => {
           x: 0,
         }}
         transition={{ duration: 2, type: "spring", stiffness: 100 }}
-        className="w-full lg:w-1/3 flex flex-col p-4 space-y-2 lg:space-y-4 mb-8 lg:mb-0 lg:mr-8"
+        className="w-full lg:w-1/3 flex flex-col p-4 space-y-2 lg:space-y-4 mb-8 lg:mb-0 mr-0 lg:mr-8"
       >
         <h1 className="text-4xl font-semibold font-sans mb-4 text-white text-center">
           {heading}
         </h1>
-        <p className="text-2xl text-white font-sans font-normal text-center">
-          Technologies Used
-        </p>
+
         <p className="flex flex-col space-y-2">
-          <span className=" text-white text-2xl border-2 border-white p-4 flex space-x-3 items-center justify-center">
-            <span>
-              <FaReact />
-            </span>
+          <span className=" text-white text-2xl p-4 flex space-x-3 items-center justify-center">
+            <span>{logo1}</span>
             <span> {tech1}</span>
           </span>
-          <span className=" text-white text-2xl border-2 border-white p-4 flex space-x-3 items-center justify-center">
-            <span>
-              <FaReact />
-            </span>
+          <span className=" text-white text-2xl  p-4 flex space-x-3 items-center justify-center">
+            <span>{logo2}</span>
             <span> {tech2}</span>
           </span>
-         {tech3?( <span className=" text-white text-2xl border-2 border-white p-4 flex space-x-3 items-center justify-center">
-            <span>
-              <FaReact />
+          {tech3 ? (
+            <span className=" text-white text-2xl p-4 flex space-x-3 items-center justify-center">
+              <span>{logo3}</span>
+              <span> {tech3}</span>
             </span>
-            <span> {tech3}</span>
-          </span>):null}
+          ) : null}
         </p>
       </motion.div>
 
@@ -62,14 +61,14 @@ const ImageSliderWithText = ({ images, heading, tech1, tech2, tech3 }) => {
           x: 0,
         }}
         transition={{ duration: 2, type: "spring", stiffness: 100 }}
-        className="w-full lg:w-2/3 relative flex items-center justify-center p-4"
+        className="w-full lg:w-2/3 relative flex items-center justify-center p-4 box-border"
       >
-        <div className="relative w-full h-full flex items-center justify-center">
+        <div className="relative w-full h-full flex items-center justify-center box-border">
           <motion.img
             key={images[currentIndex]}
             src={images[currentIndex]}
             alt={`Slide ${currentIndex}`}
-            className="object-cover w-full max-w-[700px] h-[300px] sm:h-[400px] rounded-lg"
+            className="object-cover w-full max-w-[700px] h-[400px]  rounded-lg"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -78,14 +77,14 @@ const ImageSliderWithText = ({ images, heading, tech1, tech2, tech3 }) => {
 
           <button
             onClick={prevSlide}
-            className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-gray-700 text-white rounded-full p-2"
+            className="absolute lg:left-4 left-0 top-1/2 transform -translate-y-1/2 bg-gray-700 text-white rounded-full p-2"
           >
             &#9664;
           </button>
 
           <button
             onClick={nextSlide}
-            className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-gray-700 text-white rounded-full p-2"
+            className="absolute lg:right-4 right-0 top-1/2 transform -translate-y-1/2 bg-gray-700 text-white rounded-full p-2"
           >
             &#9654;
           </button>

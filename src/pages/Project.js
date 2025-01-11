@@ -1,6 +1,11 @@
 import React from "react";
 import ImageSliderWithText from "../components/Slider";
-
+import { FaReact } from "react-icons/fa";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { RiNextjsFill } from "react-icons/ri";
+import { TbBrandRedux } from "react-icons/tb";
+import { FaYoutube } from "react-icons/fa";
+import { FaHtml5, FaJsSquare,FaCss3Alt } from "react-icons/fa";
 function Project() {
   const images1 = [
     "/photos/PA_1.png",
@@ -21,28 +26,41 @@ function Project() {
   const details1 = {
     heading: "Business Website",
     tech1: "Next.js",
-    tech2:"Tailwind CSS",
+    tech2: "Tailwind CSS",
     images: images1,
+    logo1: <RiNextjsFill />,
+    logo2: <RiTailwindCssFill className="text-blue-500" />,
   };
   const details2 = {
     heading: "Image Search",
-    tech: "HTML, CSS,JavaScript",
+    tech1: "HTML",
+    tech2: "CSS",
+    tech3: "JavaScript",
     images: images2,
+    logo1:<FaHtml5 className="text-orange-600"/>,
+    logo2:<FaCss3Alt className="text-blue-600"/>,
+    logo3:<FaJsSquare className="text-yellow-300"/>
   };
 
   const details3 = {
     heading: "Restaurant Website",
     tech1: "React.js",
-    tech2:"Tailwind CSS",
-    tech3:"Redux Toolkit",
+    tech2: "Tailwind CSS",
+    tech3: "Redux Toolkit",
     images: images3,
+    logo1: <FaReact className="text-blue-400" />,
+    logo2: <RiTailwindCssFill className="text-blue-500" />,
+    logo3: <TbBrandRedux className="text-purple-600" />,
   };
   const details4 = {
     heading: "Youtube Clone",
     tech1: "React.js",
-    tech2:"Tailwind CSS",
-    tech3:"Redux Toolkit",
+    tech2: "Tailwind CSS",
+    tech3: "Youtube API",
     images: images4,
+    logo1: <FaReact className="text-blue-400" />,
+    logo2: <RiTailwindCssFill className="text-blue-500" />,
+    logo3: <FaYoutube className="text-red-500" />,
   };
 
   return (
