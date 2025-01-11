@@ -28,7 +28,7 @@ function Project() {
     tech1: "Next.js",
     tech2: "Tailwind CSS",
     images: images1,
-    logo1: <RiNextjsFill />,
+    logo1: <RiNextjsFill className="text-white"/>,
     logo2: <RiTailwindCssFill className="text-blue-500" />,
   };
   const details2 = {
@@ -64,7 +64,7 @@ function Project() {
   };
 
   return (
-    <div className="mt-16 max-w-full">
+    <div className="mt-16 max-w-full overflow-x-hidden">
       <h1 className="text-4xl font-sans text-center animated-text font-semibold flex flex-col space-y-12">
         MY PROJECTS
       </h1>

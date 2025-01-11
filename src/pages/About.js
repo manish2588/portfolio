@@ -22,7 +22,7 @@ function Aboutme() {
         <h1 className="text-3xl sm:text-4xl md:text-6xl font-medium animated-text font-sans">
           Manish KC
         </h1>
-        <p className="font-medium font-sans text-base sm:text-lg md:text-xl text-gray-300">
+        <p className="font-light font-sans text-base sm:text-lg md:text-xl text-gray-300">
           I am a frontend developer with proficiency in React.js . I am eager to kickstart my career in the tech industry.
         </p>
         <div>
@@ -41,7 +41,7 @@ function Aboutme() {
         </div>
         <div>
           {Showmore && (
-            <p className="font-medium font-sans text-base sm:text-lg md:text-xl text-gray-300">
+            <p className="font-light font-sans text-base sm:text-lg md:text-xl text-gray-300">
               I am a frontend developer with proficiency in React.js . I am a frontend developer with proficiency in React.js and Next.js.
             </p>
           )}
