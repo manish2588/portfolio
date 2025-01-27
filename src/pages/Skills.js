@@ -4,7 +4,7 @@ import { SiNextdotjs, SiTailwindcss } from "react-icons/si";
 import { DiNodejsSmall } from "react-icons/di";
 import { TbBrandRedux } from "react-icons/tb";
 import { motion } from "framer-motion";
-
+import { TbBrandFramerMotion } from "react-icons/tb";
 const items = [
   { name: "HTML", icon: <FaHtml5 className="text-orange-600" /> },
   { name: "CSS", icon: <FaCss3Alt className="text-blue-600" /> },
@@ -14,7 +14,9 @@ const items = [
   { name: "Next.js", icon: <SiNextdotjs className="text-white" /> },
   { name: "Tailwind CSS", icon: <SiTailwindcss className="text-blue-500" /> },
   { name: "Git and GitBash", icon: <FaGithub className="text-white" /> },
-  { name: "Node.js", icon: <DiNodejsSmall className="text-green-500" /> },
+  {name:"Framer Motion" ,icon:<TbBrandFramerMotion  className="text-white"/>}
+
+ 
 ];
 
 const listVariants = {
@@ -53,12 +55,13 @@ const HoverList = () => {
           {items.map((item, index) => (
             <motion.li
               key={index}
-              className="p-2 cursor-pointer hover:bg-blue-300 text-center font-light font-sans text-lg lg:text-2xl text-gray-300"
+              className="p-2 cursor-pointer hover:bg-blue-300 hover:text-black text-center font-light font-sans text-lg lg:text-2xl text-gray-300"
               variants={itemVariants}
               onMouseEnter={() => setHoveredItem(item)}
               onMouseLeave={() => setHoveredItem(null)}
             >
               {item.name}
+           
             </motion.li>
           ))}
         </motion.ul>
