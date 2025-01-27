@@ -43,9 +43,9 @@ const Navbar = () => {
             boxShadow: '0px 0px 16px rgb(255,255,255)',
             transition: { duration: 1, type: 'spring', stiffness: 500 }
           }}
-          href="/file/Manish_K.C._CV.pdf"
+          href="/file/cv.pdf"
           download
-          className="bg-teal-500 text-white px-4 py-2 rounded-md hover:bg-teal-700 font-semibold font-sans"
+          className="bg-teal-500 text-white px-4 py-2 rounded-md hover:bg-teal-700 font-semibold font-sans "
         >
           RESUME
         </motion.a>
