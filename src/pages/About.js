@@ -9,11 +9,10 @@ function Aboutme() {
 
   return (
     <motion.div className="flex flex-col sm:flex-row px-4 sm:px-8 md:px-24 mt-8 sm:mt-12 md:mt-24 space-y-8 sm:space-y-0 sm:space-x-8 md:space-x-12 w-full h-auto">
-    
       <motion.div
-        initial={{ opacity: 0, x: -50 }} 
+        initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: [0, 0.5, 1], x: 0 }}
-        transition={{ duration: 2,type: "spring", stiffness: 100 }}
+        transition={{ duration: 2, type: "spring", stiffness: 100 }}
         className="flex flex-col space-y-6 sm:space-y-8 w-full sm:w-1/2 px-4 sm:px-8 md:px-12"
       >
         <span className="border text-white border-indigo-600 rounded-full inline-block px-4 py-2 w-auto sm:w-48 md:w-60 font-sans font-light">
@@ -23,10 +22,12 @@ function Aboutme() {
           Manish KC
         </h1>
         <p className="font-light font-sans text-base sm:text-lg md:text-xl text-gray-300">
-          I am a frontend developer with proficiency in React.js . I am eager to kickstart my career in the tech industry.
+          I am a frontend developer with proficiency in React.js . I am eager to
+          kickstart my career in the tech industry.
         </p>
         <div>
           <motion.button
+           layout
             whileHover={{
               scale: 1.2,
               textShadow: "0px 0px 16px rgb(255,255,255)",
@@ -39,39 +40,40 @@ function Aboutme() {
             Learn More
           </motion.button>
         </div>
-        <div>
+        <motion.div
+        layout
+        >
           {Showmore && (
             <p className="font-light font-sans text-base sm:text-lg md:text-xl text-gray-300">
-              I am a frontend developer with proficiency in React.js . I am a frontend developer with proficiency in React.js and Next.js.
+              I am a frontend developer with proficiency in React.js . I am a
+              frontend developer with proficiency in React.js and Next.js.
             </p>
           )}
-        </div>
+        </motion.div>
       </motion.div>
+
+      <motion.div className="flex justify-center items-center w-full "
       
-   
-      <div className="w-full sm:w-1/2 flex justify-center">
-        <motion.div
-          initial={{ opacity: 0, x: 50 }} 
-          whileInView={{ opacity: [0, 0.5, 1], x: 0 }}
-          transition={{ duration: 2,type: "spring", stiffness: 100 }}
+      >
+       <motion.div className="w-64 h-64 lg:w-96 lg:h-96"
+       layout
+       >
+       <motion.img
+          src="/photos/IMG20240309180123.jpg"
+          alt="Profile"
+          className="w-full h-full object-cover rounded-full"
+          whileInView={{ opacity: 1 }}
+          initial={{ opacity: 0 }}
+          transition={{ duration: 0.5 }}
           whileHover={{
-            scale: 1.2,
+            scale: 1.1,
             textShadow: "0px 0px 16px rgb(255,255,255)",
             boxShadow: "0px 0px 24px rgb(255,255,255)",
-            transition: { duration: 1, type: "spring", stiffness: 400 },
+            transition: { duration: 0.5, type: "spring", stiffness: 400 },
           }}
-          className="w-full sm:w-80 md:w-96 h-48 sm:h-72 md:h-96 overflow-hidden rounded-lg"
-        >
-          <motion.img
-            src="/photos/IMG20240309180123.jpg"
-            alt="Profile"
-            className="w-full h-full object-cover"
-            whileInView={{ opacity: 1 }} 
-            initial={{ opacity: 0 }}
-            transition={{ duration: 0.5 }} 
-          />
-        </motion.div>
-      </div>
+        />
+       </motion.div>
+      </motion.div>
     </motion.div>
   );
 }
