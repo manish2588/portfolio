@@ -82,7 +82,7 @@ const HoverList = () => {
               {hoveredItem.icon}
             </motion.div>
           ) : (
-            <FaHtml5 className="text-orange-600 text-9xl lg:text-[13rem]" />
+            <FaHtml5 className="text-orange-500 text-9xl lg:text-[13rem]" />
           )}
         </motion.div>
       </motion.div>
