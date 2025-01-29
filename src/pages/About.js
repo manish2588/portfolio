@@ -62,9 +62,9 @@ function Aboutme() {
           src="/photos/IMG20240309180123.jpg"
           alt="Profile"
           className="w-full h-full object-cover rounded-full"
-          whileInView={{ opacity: 1 }}
-          initial={{ opacity: 0 }}
-          transition={{ duration: 0.5 }}
+          whileInView={{ scale:1,transition:{duration:1} }}
+          initial={{ scale:0 }}
+         
           whileHover={{
             scale: 1.1,
             textShadow: "0px 0px 16px rgb(255,255,255)",
