@@ -28,7 +28,7 @@ const Navbar = () => {
 
   return (
     <motion.nav
-      className="bg-transparent p-4 fixed top-0 left-0 right-0 z-50 backdrop-blur-lg backdrop-brightness-50"
+      className="bg-transparent p-4 fixed top-0 left-0 right-0 z-10 backdrop-blur-lg backdrop-brightness-50"
     >
       <div className="container mx-auto flex items-center justify-between h-16 relative">
         
