@@ -22,7 +22,7 @@ function App() {
       <Element name="skills" className="element pt-20">
         <HoverList />
       </Element>
-      <Element name="projects" className="element pt-20">
+      <Element name="projects" className="element min-h-screen">
         <Project />
       </Element>
       <Element name="contact" className="element pt-20">
