@@ -1,64 +1,79 @@
+/* App Container Styles */
 .App {
   position: relative;
-  overflow: auto; /* Allow scrolling */
-  min-height: 100vh; /* Ensure the App container takes at least the full viewport height */
-  margin: 0; /* Remove default margin */
-  padding-top: 5rem; /* Adjust this value based on the height of your navbar */
+  min-height: 100vh;
+  padding-top: 5rem;
 }
 
+/* Background Video Styling */
 .background-video {
-  position: fixed; /* Ensure the video covers the entire background */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the video covers the container without stretching */
-  z-index: -1; /* Places the video behind other content */
-  filter: blur(2px); /* Adjust the blur level as needed */
+  object-fit: cover;
+  z-index: -1;
+  filter: blur(2px);
 }
 
+/* Navbar, About, and Project Sections */
 .Navbar,
 .Aboutme,
 .HoverList {
-  position: relative; /* Ensure these elements stay above the background video */
+  position: relative;
   z-index: 1;
 }
 
 .overlay {
-  background: rgba(0, 0, 0, 0.3); /* Dark semi-transparent background */
-  backdrop-filter: blur(10px); /* Apply blur effect */
-  padding: 20px; /* Optional: add padding to the overlay */
-  border-radius: 4px; /* Optional: add rounded corners */
-}
-/* In App.css or a separate CSS file */
-@keyframes colorChange {
-  0% { color: rgb(16, 165, 246); }
-  50% { color: rgb(179, 246, 137); }
-  100% { color: rgba(238, 220, 236, 0.897); }
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 4px;
 }
 
-.animated-text {
-  animation: colorChange 3s infinite;
+/* Sticky Section */
+.sticky-section {
+  position: sticky;
+  top: 4rem; /* Adjust this according to your navbar height */
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 1rem;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
-/* App.css */
+
+/* Smooth Scroll */
 html {
   scroll-behavior: smooth;
 }
-/* General hover effect */
-/* App.css */
 
-/* General hover effect */
+/* Navbar Link Hover and Active States */
 .navbar-link {
   transition: color 0.2s ease-in-out;
 }
 
 .navbar-link:hover {
-  color: #d1d5db; /* Tailwind gray-400 equivalent */
+  color: #d1d5db;
 }
 
-/* Active state styles */
 .active {
-  color: #38bdf8 !important; /* Tailwind sky-400 equivalent */
-  border-bottom: 2px solid #38bdf8 !important;
+  color: #38bdf8;
+  border-bottom: 2px solid #38bdf8;
 }
 
+/* Keyframe Animation */
+@keyframes colorChange {
+  0% {
+    color: rgb(16, 165, 246);
+  }
+  50% {
+    color: rgb(179, 246, 137);
+  }
+  100% {
+    color: rgba(238, 220, 236, 0.897);
+  }
+}
+
+.animated-text {
+  animation: colorChange 3s infinite;
+}
