@@ -46,7 +46,7 @@ function Aboutme() {
           {Showmore && (
             <p className="font-light font-sans text-base sm:text-lg md:text-xl text-gray-300">
               I am a frontend developer with proficiency in React.js . I am a
-              frontend developer with proficiency in React.js and Next.js.
+              frontend developer with proficiency in React.js.
             </p>
           )}
         </motion.div>
