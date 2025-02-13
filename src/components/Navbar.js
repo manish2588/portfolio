@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   const list_variants = {
-    hidden: { opacity: 0, y: -1000 },
+    hidden: { opacity: 0, y: 10 },
     visible: {
       opacity: 1,
       y: 0,
