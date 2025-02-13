@@ -10,6 +10,7 @@ const ImageSliderWithText = ({
   logo1,
   logo2,
   logo3,
+  logos,
   progress,
   range,
   targetScale,
@@ -30,23 +31,23 @@ const ImageSliderWithText = ({
       className="flex flex-col lg:flex-row h-3/5 bg-transparent/50 lg:w-4/5 w-full backdrop-blur-xl backdrop-brightness-150  shadow-lg relative rounded-xl"
       style={{ top: `${i * 20}px`, scale }}
     >
-      <motion.div className="w-full lg:w-1/3 flex flex-col p-4 space-y-2 lg:space-y-4 mb-8 lg:mb-0 mr-0 lg:mr-8">
-        <h1 className="text-4xl font-semibold font-serif mb-4 text-white text-center ">
+      <motion.div className="w-full lg:w-1/3 flex flex-col p-4 space-y-0 lg:space-y-4 mb-8 lg:mb-0 mr-0 lg:mr-8">
+        <h1 className=" text-lg lg:text-4xl font-semibold font-serif mb-4 text-white text-center ">
           {heading}
         </h1>
 
-        <p className="flex flex-col space-y-2">
-          <span className=" text-white text-2xl p-4 flex space-x-3 items-center justify-center animated-text">
-            <span>{logo1}</span>
+        <p className="flex flex-col space-y-0.5">
+          <span className=" text-white text-medium lg:text-2xl p-1 flex space-x-3 items-center justify-center animated-text">
+            <span>{logos[0]}</span>
             <span> {tech1}</span>
           </span>
-          <span className=" text-white text-2xl  p-4 flex space-x-3 items-center justify-center animated-text">
-            <span>{logo2}</span>
+          <span className=" text-white  text-medium lg:text-2xl  p-1 flex space-x-3 items-center justify-center animated-text">
+            <span >{logos[1]}</span>
             <span> {tech2}</span>
           </span>
           {tech3 ? (
-            <span className=" text-white text-2xl p-4 flex space-x-3 items-center justify-center animated-text">
-              <span>{logo3}</span>
+            <span className=" text-white  text-medium lg:text-2xl p-1 flex space-x-3 items-center justify-center animated-text">
+              <span>{logos[2]}</span>
               <span> {tech3}</span>
             </span>
           ) : null}
