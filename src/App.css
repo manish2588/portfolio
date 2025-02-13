@@ -43,9 +43,7 @@
 }
 
 /* Smooth Scroll */
-html {
-  scroll-behavior: smooth;
-}
+
 
 /* Navbar Link Hover and Active States */
 .navbar-link {

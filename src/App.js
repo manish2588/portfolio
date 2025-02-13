@@ -1,13 +1,32 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Element } from "react-scroll";
 import Navbar from "./components/Navbar";
 import Aboutme from "./pages/About";
 import HoverList from "./pages/Skills";
 import Contact from "./pages/Contact";
 import Project from "./pages/Project";
-import './App.css';
+import "./App.css";
+import Lenis from "@studio-freight/lenis";
 
 function App() {
+  useEffect(() => {
+    const lenis = new Lenis({
+      lerp: 0.1,
+      smoothWheel: true,
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
+    return () => {
+      lenis.destroy(); // Cleanup Lenis on component unmount
+    };
+  }, []);
+
   return (
     <div className="App">
       <video autoPlay muted loop className="background-video">
