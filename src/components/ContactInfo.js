@@ -6,8 +6,9 @@ const InfoBoxes = () => {
   return (
     <div className="flex flex-wrap justify-center gap-4 mt-6">
       <motion.a
-        initial={{ opacity: 0, y: -200 }}
-        whileInView={{ opacity: [0, 0.25, 0.5, 0.75, 1], y: 0 }}
+        initial={{ opacity: 0, x: -20 }}
+        whileInView={{ opacity: [0, 1], x: 0 }}
+        viewport={{once:true}}
         transition={{ duration: 2, type: "spring", stiffness: 30 }}
         href="tel:9808952367"
         className="relative flex items-center w-full sm:w-64"
@@ -28,9 +29,10 @@ const InfoBoxes = () => {
       </motion.a>
 
       <motion.a
-        initial={{ opacity: 0, y: -200 }}
-        whileInView={{ opacity: [0, 0.25, 0.5, 0.75, 1], y: 0 }}
-        transition={{ duration: 2, delay: 0.2, type: "spring", stiffness: 30 }}
+        initial={{ opacity: 0, x: -20 }}
+        whileInView={{ opacity: [0, 1], x: 0 }}
+        transition={{ duration: 2, delay: 0.4, type: "spring", stiffness: 30 }}
+        viewport={{once:true}}
         href="https://www.facebook.com/manish.kc.94617999"
         target="_blank"
         rel="noopener noreferrer"
@@ -55,11 +57,12 @@ const InfoBoxes = () => {
       </motion.a>
 
       <motion.a
-        initial={{ opacity: 0, y: -200 }}
-        whileInView={{ opacity: [0, 0.25, 0.5, 0.75, 1], y: 0 }}
-        transition={{ duration: 2, delay: 0.4, type: "spring", stiffness: 30 }}
+        initial={{ opacity: 0, x: -20 }}
+        whileInView={{ opacity: [0, 1], x: 0 }}
+        transition={{ duration: 2, delay: 0.6, type: "spring", stiffness: 30 }}
         href="mailto:manishkc258@gmail.com"
         className="relative flex items-center w-full sm:w-64"
+        viewport={{once:true}}
       >
         <div className="relative w-full bg-transparent border border-white text-black rounded-l-lg overflow-hidden transition-all duration-500 group p-2">
           <div className="absolute inset-0 flex items-center justify-center bg-blue-500 text-white transform -translate-x-full transition-transform duration-500 group-hover:translate-x-0 p-2">
