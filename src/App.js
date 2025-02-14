@@ -33,6 +33,7 @@ function App() {
         <source src="/videos/4.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
+
       <Navbar />
 
       <Element name="about" className="element pt-20">

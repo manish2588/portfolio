@@ -55,8 +55,10 @@
 }
 
 .active {
-  color: #38bdf8;
+  border-radius: 10px;
   border-bottom: 2px solid #38bdf8;
+  background-color: #38bdf8;
+  transform: scale(2);
 }
 
 /* Keyframe Animation */
