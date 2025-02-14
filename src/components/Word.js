@@ -3,13 +3,7 @@ import { motion } from "framer-motion";
 import { useRef } from "react";
 
 // Custom hook to compute opacity values for each word based on scroll progress
-function useWordOpacity(scrollYProgress, words) {
-  return words.map((_, index) => {
-    const start = index / words.length; // Start point for opacity transition
-    const end = start + 1 / words.length; // End point for opacity transition
-    return useTransform(scrollYProgress, [start, end], [0, 1]); // Opacity transition from 0 to 1
-  });
-}
+
 
 function Word({ value }) {
   const pRef = useRef(null);
@@ -23,7 +17,13 @@ function Word({ value }) {
   const words = value.split(" "); // Split the input text into individual words
 
   // Compute opacity values for each word using the custom hook
-  const opacityValues = useWordOpacity(scrollYProgress, words);
+  const wordTransforms = words.map((_, index) => {
+    const start = index / words.length;
+    const end = start + 1 / words.length;
+    return { start, end };
+  });
+  const {start,end}=wordTransforms;
+  const opacity=useTransform(scrollYProgress,[start,end],[0,1])
 
   return (
     <motion.div
@@ -41,7 +41,7 @@ function Word({ value }) {
             {/* Foreground word with dynamic opacity based on scroll */}
             <motion.span
               className="text-slate-400 "
-              style={{ opacity: opacityValues[index] }}
+              style={{ opacity:opacity}}
             >
               {word}
             </motion.span>
