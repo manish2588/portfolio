@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Word from "../components/Word";
+import Paragraph from "../components/Word";
 
 function Aboutme() {
   const [Showmore, setShowmore] = useState(false);
@@ -40,7 +41,6 @@ function Aboutme() {
           >
             KC
           </motion.h1>
-
         </motion.div>
 
         <motion.div className="flex justify-center items-center w-full ">
@@ -61,9 +61,9 @@ function Aboutme() {
           </motion.div>
         </motion.div>
       </motion.div>
-      <div className="max-w-screen lg:h-screen h-[50vh] flex flex-col items-center justify-center mt-48">
-        <div className="lg:w-full w-4/5 px-10 lg:px-20">
-          <Word
+      <div className="max-w-screen lg:h-screen h-[50vh]  mt-24 lg:mt-40">
+        <div className="lg:w-full w-full h-full px-4 lg:px-20">
+          <Paragraph
             value="I am a frontend developer with proficiency in React.js . I am eager to
           kickstart my career in the tech industry."
           />

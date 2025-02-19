@@ -2,54 +2,47 @@ import { useScroll, useTransform } from "framer-motion";
 import { motion } from "framer-motion";
 import { useRef } from "react";
 
-// Custom hook to compute opacity values for each word based on scroll progress
-
-
-function Word({ value }) {
+function Paragraph({ value }) {
   const pRef = useRef(null);
 
-  // Track scroll progress relative to the target element
   const { scrollYProgress } = useScroll({
     target: pRef,
-    offset: ["0.2 0.80", "end 0.80"], // Scroll range for the effect
+    offset: ["0.2 0.80", "end 0.7"],
   });
 
-  const words = value.split(" "); // Split the input text into individual words
-
-  // Compute opacity values for each word using the custom hook
-  const wordTransforms = words.map((_, index) => {
-    const start = index / words.length;
-    const end = start + 1 / words.length;
-    return { start, end };
-  });
-  const {start,end}=wordTransforms;
-  const opacity=useTransform(scrollYProgress,[start,end],[0,1])
+  const words = value.split(" ");
 
   return (
     <motion.div
-      className="w-full font-serif lg:text-8xl text-3xl lg:font-extrabold font-bold lg:h-full h-full"
+      className="w-[90vw] font-serif lg:text-8xl text-4xl lg:font-extrabold font-bold lg:h-full h-full"
       ref={pRef}
-    >
+    > 
       {/* Flex container for words with spacing */}
-      <div className="flex flex-wrap gap-2 lg:gap-x-4 lg:gap-y-8">
-        {words.map((word, index) => (
-          <span key={index} className="relative inline-block">
-            {/* Background word with low opacity */}
-            <span className="absolute opacity-20 text-slate-200">
-              {word}
-            </span>
-            {/* Foreground word with dynamic opacity based on scroll */}
-            <motion.span
-              className="text-slate-400 "
-              style={{ opacity:opacity}}
-            >
-              {word}
-            </motion.span>
-          </span>
-        ))}
+      <div className="flex flex-wrap gap-4 lg:gap-x-4 lg:gap-y-10">
+        {words.map((item, index) => {
+          const start = index / words.length;
+          const end = start + 1 / words.length;
+          return (
+            <Word key={index} range={[start, end]} progress={scrollYProgress}>
+              {item}
+            </Word>
+          );
+        })}
       </div>
     </motion.div>
   );
 }
 
-export default Word;
+export default Paragraph;
+
+function Word({ children,range,progress }) {
+  const opacity=useTransform(progress,range,[0,1])
+  return (
+    <span className="relative inline-block">
+      {/* Background word with low opacity */}
+      <motion.span className="absolute opacity-20 text-slate-200" style={{opacity:0.1}}>{children}</motion.span>
+      {/* Foreground word with dynamic opacity based on scroll */}
+      <motion.span className="text-slate-400 " style={{opacity}}>{children}</motion.span>
+    </span>
+  );
+}
