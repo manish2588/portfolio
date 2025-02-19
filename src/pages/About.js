@@ -1,14 +1,9 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import Word from "../components/Word";
+
 import Paragraph from "../components/Word";
 
 function Aboutme() {
-  const [Showmore, setShowmore] = useState(false);
-  const handleclick = () => {
-    setShowmore(!Showmore);
-  };
-
   return (
     <>
       <motion.div className="flex flex-col sm:flex-row px-4 sm:px-8 md:px-24 mt-8 sm:mt-12 md:mt-24 space-y-8 sm:space-y-0 sm:space-x-8 md:space-x-12 w-full h-auto">
@@ -57,6 +52,7 @@ function Aboutme() {
                 boxShadow: "0px 0px 24px rgb(255,255,255)",
                 transition: { duration: 0.5, type: "spring", stiffness: 400 },
               }}
+              viewport={{once:true}}
             />
           </motion.div>
         </motion.div>
