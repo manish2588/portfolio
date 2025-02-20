@@ -16,7 +16,7 @@ const InfoBoxes = () => {
         <div className="relative w-full bg-transparent border border-gray-900 text-black rounded-l-lg overflow-hidden transition-all duration-500 group p-2">
           <div className="absolute inset-0 flex items-center justify-center bg-blue-500 text-gray-950 transform -translate-x-full transition-transform duration-500 group-hover:translate-x-0 p-2">
             <div className="text-center">
-              <p className="text-lg">9808952367</p>
+              <p className="text-lg">9842935271</p>
             </div>
           </div>
           <div className="flex items-center text-gray-950 justify-center text-lg font-semibold transition-opacity duration-500 group-hover:opacity-0">
