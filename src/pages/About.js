@@ -9,7 +9,7 @@ function Aboutme() {
       <motion.div className="flex flex-col sm:flex-row px-4 sm:px-8 md:px-24 mt-8 sm:mt-12 md:mt-24 space-y-8 sm:space-y-0 sm:space-x-8 md:space-x-12 w-full h-auto">
         <motion.div className="flex flex-col space-y-6 sm:space-y-8 w-full sm:w-1/2 px-4 sm:px-8 md:px-12 justify-center items-center">
           <motion.span
-            className="border text-2xl lg:text-2xl text-white text-center border-indigo-600 rounded-full inline-block px-4 py-2 w-full font-sans font-light"
+            className="border text-2xl lg:text-2xl text-black text-center border-indigo-600 rounded-full inline-block px-4 py-2 w-full font-sans font-light"
             initial={{ scaleX: 0, opacity: 0 }}
             whileInView={{ scaleX: 1, opacity: 1 }}
             transition={{ duration: 0.5 }}

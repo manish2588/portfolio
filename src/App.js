@@ -29,10 +29,7 @@ function App() {
 
   return (
     <div className="App">
-      <video autoPlay muted loop className="background-video">
-        <source src="/videos/4.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+    
 
       <Navbar />
 

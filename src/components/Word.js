@@ -40,9 +40,9 @@ function Word({ children,range,progress }) {
   return (
     <span className="relative inline-block">
       {/* Background word with low opacity */}
-      <motion.span className="absolute opacity-20 text-slate-200" style={{opacity:0.1}}>{children}</motion.span>
+      <motion.span className="absolute opacity-20 text-gray-800" style={{opacity:0.1}}>{children}</motion.span>
       {/* Foreground word with dynamic opacity based on scroll */}
-      <motion.span className="text-slate-400 " style={{opacity}}>{children}</motion.span>
+      <motion.span className="text-gray-950" style={{opacity}}>{children}</motion.span>
     </span>
   );
 }

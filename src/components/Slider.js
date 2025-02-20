@@ -28,7 +28,7 @@ const ImageSliderWithText = ({
 
   return (
     <motion.div
-      className="flex flex-col lg:flex-row h-3/5 bg-transparent/50 lg:w-4/5 w-full backdrop-blur-xl backdrop-brightness-150  shadow-lg relative rounded-xl"
+      className="flex flex-col lg:flex-row h-4/6 bg-teal-700 lg:w-4/5 w-full backdrop-blur-xl backdrop-brightness-150  shadow-lg relative rounded-xl"
       style={{ top: `${i * 20}px`, scale }}
     >
       <motion.div className="w-full lg:w-1/3 flex flex-col p-4 space-y-0 lg:space-y-4 mb-8 lg:mb-0 mr-0 lg:mr-8">

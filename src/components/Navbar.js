@@ -26,7 +26,7 @@ const Navbar = () => {
   };
 
   return (
-    <motion.nav className="bg-transparent p-4 fixed top-0 left-0 right-0 z-10 backdrop-blur-lg backdrop-brightness-50">
+    <motion.nav className="bg-gray-100 border-b-[0.5px] border-gray-300 p-4 fixed top-0 left-0 right-0 z-10 backdrop-blur-xl opacity-100">
       <div className="container mx-auto flex items-center justify-between h-16 relative">
         <motion.a
           variants={list_variants}
@@ -41,7 +41,7 @@ const Navbar = () => {
           }}
           href="/file/cv.pdf"
           download
-          className="bg-teal-500 text-white px-4 py-2 rounded-md hover:bg-teal-700 font-semibold font-sans "
+          className="bg-teal-500 text-gray-900 px-4 py-2 rounded-md hover:bg-teal-700 font-semibold font-sans "
         >
           RESUME
         </motion.a>
@@ -50,7 +50,7 @@ const Navbar = () => {
             href="https://www.facebook.com/manish.kc.94617999"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white text-2xl hover:text-gray-400"
+            className="text-gray-900text-2xl hover:text-gray-400"
           >
             <FaFacebook className="text-blue-500" />
           </a>
@@ -58,14 +58,14 @@ const Navbar = () => {
             href="https://github.com/manish2588"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white text-2xl hover:text-gray-400"
+            className="text-gray-900 text-2xl hover:text-gray-400"
           >
             <FaGithub />
           </a>
         </div>
 
         <div className="lg:hidden">
-          <button onClick={toggleMenu} className="text-white text-2xl">
+          <button onClick={toggleMenu} className="text-gray-900 text-2xl">
             {isMenuOpen ? <AiOutlineClose /> : <AiOutlineMenu />}
           </button>
         </div>
@@ -81,7 +81,7 @@ const Navbar = () => {
             animate="visible"
             className={`lg:flex space-x-8 my-auto ${
               isMenuOpen
-                ? "flex flex-col absolute top-16 left-0 w-full bg-gray-800 text-white p-4 z-40"
+                ? "flex flex-col absolute top-16 left-0 w-full bg-gray-800 text-gray-900 p-4 z-40"
                 : "hidden"
             } lg:relative lg:top-0 lg:bg-transparent lg:p-0`}
           >
@@ -100,7 +100,7 @@ const Navbar = () => {
                 duration={1000}
                 spy={true}
                 activeClass="active"
-                className="navbar-link text-white text-2xl font-semibold hover:text-gray-400 px-4 py-2 cursor-pointer"
+                className="navbar-link text-gray-900 text-2xl font-semibold hover:text-gray-400 px-4 py-2 cursor-pointer"
               >
                 ABOUT ME
               </Link>
@@ -120,7 +120,7 @@ const Navbar = () => {
                 duration={1000}
                 spy={true}
                 activeClass="active"
-                className="navbar-link text-white text-2xl font-semibold hover:text-gray-400 px-4 py-2 cursor-pointer"
+                className="navbar-link text-gray-900text-2xl font-semibold hover:text-gray-400 px-4 py-2 cursor-pointer"
               >
                 SKILLS
               </Link>
@@ -140,7 +140,7 @@ const Navbar = () => {
                 duration={1000}
                 spy={true}
                 activeClass="active"
-                className="navbar-link text-white text-2xl  font-semibold  px-4 py-2 cursor-pointer"
+                className="navbar-link text-gray-900text-2xl  font-semibold  px-4 py-2 cursor-pointer"
               >
                 PROJECTS
               </Link>
@@ -160,7 +160,7 @@ const Navbar = () => {
                 duration={1000}
                 spy={true}
                 activeClass="active"
-                className="navbar-link text-white text-2xl font-semibold hover:text-gray-400 px-4 py-2 cursor-pointer"
+                className="navbar-link text-gray-900 text-2xl font-semibold hover:text-gray-400 px-4 py-2 cursor-pointer"
               >
                 CONTACT
               </Link>
@@ -173,7 +173,7 @@ const Navbar = () => {
             href="https://www.facebook.com/manish.kc.94617999"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white text-2xl hover:text-gray-400"
+            className="text-gray-900 text-2xl hover:text-gray-400"
           >
             <FaFacebook className="text-blue-500" />
           </a>
@@ -181,7 +181,7 @@ const Navbar = () => {
             href="https://github.com/manish2588"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white text-2xl hover:text-gray-400"
+            className="text-gray-900 text-2xl hover:text-gray-400"
           >
             <FaGithub />
           </a>
@@ -194,7 +194,7 @@ const Navbar = () => {
             href="https://www.facebook.com/manish.kc.94617999"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white text-2xl hover:text-gray-400"
+            className="text-gray-900 text-2xl hover:text-gray-400"
           >
             <FaFacebook className="text-blue-500" />
           </a>
@@ -202,7 +202,7 @@ const Navbar = () => {
             href="https://github.com/manish2588"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white text-2xl hover:text-gray-400"
+            className="text-gray-900 text-2xl hover:text-gray-400"
           >
             <FaGithub />
           </a>

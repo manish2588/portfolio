@@ -3,6 +3,8 @@
   position: relative;
   min-height: 100vh;
   padding-top: 5rem;
+  background-color: rgba(239, 245, 242, 0.942);
+  
 }
 
 /* Background Video Styling */
@@ -15,6 +17,7 @@
   object-fit: cover;
   z-index: -1;
   filter: blur(2px);
+ 
 }
 
 /* Navbar, About, and Project Sections */
@@ -64,13 +67,13 @@
 /* Keyframe Animation */
 @keyframes colorChange {
   0% {
-    color: rgb(16, 165, 246);
+    color: rgb(11, 40, 55);
   }
   50% {
-    color: rgb(179, 246, 137);
+    color: rgb(25, 26, 25);
   }
   100% {
-    color: rgba(238, 220, 236, 0.897);
+    color: rgba(12, 1, 11, 0.897);
   }
 }
 

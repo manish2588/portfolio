@@ -11,10 +11,10 @@ const items = [
   { name: "JavaScript", icon: <FaJsSquare className="text-yellow-300" /> },
   { name: "React.js", icon: <FaReact className="text-blue-400" /> },
   { name: "Redux Toolkit", icon: <TbBrandRedux className="text-purple-600" /> },
-  { name: "Next.js", icon: <SiNextdotjs className="text-white" /> },
+  { name: "Next.js", icon: <SiNextdotjs className="text-gray-950" /> },
   { name: "Tailwind CSS", icon: <SiTailwindcss className="text-blue-500" /> },
-  { name: "Git and GitBash", icon: <FaGithub className="text-white" /> },
-  {name:"Framer Motion" ,icon:<TbBrandFramerMotion  className="text-white"/>}
+  { name: "Git and GitBash", icon: <FaGithub className="text-gray-950" /> },
+  {name:"Framer Motion" ,icon:<TbBrandFramerMotion  className="text-gray-950"/>}
 
  
 ];
@@ -44,7 +44,7 @@ const HoverList = () => {
     <div className="flex flex-col lg:flex-row w-full lg:w-[80vw] mx-auto mt-12 lg:mt-24">
       
       <div className="w-full lg:w-1/2 p-4 bg-transparent">
-        <h1 className="text-center font-sans font-medium text-2xl lg:text-4xl text-white mb-6 underline underline-offset-4 decoration-blue-800">
+        <h1 className="text-center font-sans font-medium text-2xl lg:text-4xl text-gray-950 mb-6 underline underline-offset-4 decoration-blue-800">
           Technologies
         </h1>
         <motion.ul
@@ -55,7 +55,7 @@ const HoverList = () => {
           {items.map((item, index) => (
             <motion.li
               key={index}
-              className="p-2 cursor-pointer hover:bg-blue-300 hover:text-black text-center font-light font-sans text-lg lg:text-2xl text-gray-300"
+              className="p-2 cursor-pointer rounded-full hover:bg-blue-300 hover:text-black text-center font-light font-sans text-lg lg:text-2xl text-gray-950"
               variants={itemVariants}
               onMouseEnter={() => setHoveredItem(item)}
               onMouseLeave={() => setHoveredItem(null)}
