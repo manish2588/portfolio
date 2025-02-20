@@ -21,7 +21,14 @@ function Aboutme() {
           <motion.h1
             className="text-6xl  md:text-6xl lg:text-9xl font-medium animated-text font-serif"
             initial={{ y: 50, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
+            whileInView={{
+              y: 0,
+              opacity: 1,
+              transition: {
+                type: "spring",
+                stiffness: 100,
+              },
+            }}
             transition={{ duration: 1 }}
             viewport={{ once: true }}
           >
@@ -30,7 +37,14 @@ function Aboutme() {
           <motion.h1
             className="text-6xl md:text-6xl lg:text-9xl font-medium animated-text font-serif"
             initial={{ y: 50, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
+            whileInView={{
+              y: 0,
+              opacity: 1,
+              transition: {
+                type: "spring",
+                stiffness: 100,
+              },
+            }}
             transition={{ duration: 1 }}
             viewport={{ once: true }}
           >
@@ -52,7 +66,7 @@ function Aboutme() {
                 boxShadow: "0px 0px 24px rgb(255,255,255)",
                 transition: { duration: 0.5, type: "spring", stiffness: 400 },
               }}
-              viewport={{once:true}}
+              viewport={{ once: true }}
             />
           </motion.div>
         </motion.div>

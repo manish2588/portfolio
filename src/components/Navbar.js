@@ -27,7 +27,7 @@ const Navbar = () => {
 
   return (
     <motion.nav className="bg-gray-100 border-b-[0.5px] border-gray-300 p-4 fixed top-0 left-0 right-0 z-10 backdrop-blur-xl opacity-100">
-      <div className="container mx-auto flex items-center justify-between h-16 relative">
+      <div className="container mx-auto flex items-center justify-between h-12 relative">
         <motion.a
           variants={list_variants}
           initial="hidden"
@@ -120,7 +120,7 @@ const Navbar = () => {
                 duration={1000}
                 spy={true}
                 activeClass="active"
-                className="navbar-link text-gray-900text-2xl font-semibold hover:text-gray-400 px-4 py-2 cursor-pointer"
+                className="navbar-link text-gray-900 text-2xl font-semibold hover:text-gray-400 px-4 py-2 cursor-pointer"
               >
                 SKILLS
               </Link>
@@ -140,7 +140,7 @@ const Navbar = () => {
                 duration={1000}
                 spy={true}
                 activeClass="active"
-                className="navbar-link text-gray-900text-2xl  font-semibold  px-4 py-2 cursor-pointer"
+                className="navbar-link text-gray-900 text-2xl  font-semibold  px-4 py-2 cursor-pointer"
               >
                 PROJECTS
               </Link>

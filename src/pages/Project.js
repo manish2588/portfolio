@@ -76,12 +76,12 @@ function Project() {
   ];
 
   return (
-    <div className="mt-[20vh] mb-[30vh]" ref={mainRef}>
+    <div className="mt-[20vh] mb-[20vh]" ref={mainRef}>
       {projectDetails.map((project, index) => {
         const targetScale = 1 - (projectDetails.length - index) * 0.05;
         return (
           <div
-            className="max-w-screen h-screen flex flex-col justify-center items-center sticky top-0 px-8"
+            className="max-w-screen h-screen flex flex-col justify-center items-center sticky top-6 px-8"
             key={index}
           >
             <ImageSliderWithText
