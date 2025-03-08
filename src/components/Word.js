@@ -39,9 +39,9 @@ function Word({ children,range,progress }) {
   const opacity=useTransform(progress,range,[0,1])
   return (
     <span className="relative inline-block">
-      {/* Background word with low opacity */}
+     
       <motion.span className="absolute opacity-20 text-gray-800" style={{opacity:0.1}}>{children}</motion.span>
-      {/* Foreground word with dynamic opacity based on scroll */}
+      
       <motion.span className="text-gray-950" style={{opacity}}>{children}</motion.span>
     </span>
   );
