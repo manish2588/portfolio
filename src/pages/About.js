@@ -74,7 +74,7 @@ function Aboutme() {
       <div className="max-w-screen lg:h-screen h-[50vh]  mt-24 lg:mt-40">
         <div className="lg:w-full w-full h-full px-4 lg:px-20">
           <Paragraph
-            value="I am a frontend developer with proficiency in React . I am eager to
+            value="I am a frontend developer with proficiency in React.js . I am eager to
           kickstart my career in the tech industry."
           />
         </div>
