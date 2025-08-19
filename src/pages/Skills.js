@@ -41,7 +41,7 @@ const HoverList = () => {
   const [hoveredItem, setHoveredItem] = useState(null);
 
   return (
-    <div className="flex flex-col lg:flex-row w-full lg:w-[80vw] mx-auto mt-12 lg:mt-24">
+    <div className="flex flex-col bg-blue-500 lg:flex-row w-full lg:w-[80vw] mx-auto mt-12 lg:mt-24">
       
       <div className="w-full lg:w-1/2 p-4 bg-transparent">
         <h1 className="text-center font-sans font-medium text-2xl lg:text-4xl text-gray-950 mb-6 underline underline-offset-4 decoration-blue-800">
